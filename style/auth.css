@@ -12,22 +12,24 @@
 
 .enter_box {
   padding-top: 40px;
+  text-align: left;
 }
 
-.enter_box > div+ div {
+.enter_box > div + div {
   padding-top: 16px;
 }
 
 .enter_box > div label {
-  display: block;
+  display: inline-block;
   color: var(--color-black);
   font-size: 18px;
   font-weight: 700;
   text-align: left;
   line-height: 26px;
+  cursor: pointer;
 }
 
-.enter_box>div .pwd_box {
+.enter_box > div .pwd_box {
   position: relative;
 }
 
@@ -52,10 +54,10 @@
   font-weight: 600;
   line-height: 56px;
   cursor: pointer;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.enter_box .box_btn:hover>* {
+.enter_box .box_btn:hover > * {
   background-color: var(--color-theme);
 }
 
@@ -69,7 +71,7 @@
   border-radius: 8px;
 }
 
-.enter_box .simple_login>p {
+.enter_box .simple_login > p {
   color: var(--color-black);
   font-size: 16px;
   font-weight: 500;
@@ -88,7 +90,7 @@
   font-weight: 500;
 }
 
-.enter_box .txt_joinus>a {
+.enter_box .txt_joinus > a {
   padding-left: 4px;
   color: var(--color-theme);
   font: inherit;
@@ -103,20 +105,18 @@
 
 /* input error */
 .form_input.input-error {
-  border:1px solid var(--color-error);
+  border: 1px solid var(--color-error);
 }
 #error-msg {
-  margin:8px 16px 0;
-  color:var(--color-error);
-  font-size:14px;
-  font-weight:600;
-  text-align:left;
+  margin: 8px 16px 0;
+  color: var(--color-error);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
 }
 @media (max-width: 768px) {
   .sub_logo {
-    width:198px;
-    height:66px;
+    width: 198px;
+    height: 66px;
   }
 }
-
-
